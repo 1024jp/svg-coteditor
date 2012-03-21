@@ -989,6 +989,30 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>transform="matrix(1,0,0,1,0,0)"</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>transform="rotate(0)"</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>transform="scale(1,1)"</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>transform="skewX(0)"</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>transform="skewY(0)"</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>transform="translate(0,0)"</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>type</string>
 		</dict>
 		<dict>
