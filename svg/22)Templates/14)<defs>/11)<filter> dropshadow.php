@@ -16,7 +16,7 @@ echo <<< END_OF_TEMPLATE
 		</feComponentTransfer> 
 		<feOffset result="shadow" dx="2" dy="2"/>
 		<feMerge>
-			<feMergeNode in="shadow" opacity="0.1"/>
+			<feMergeNode in="shadow"/>
 			<feMergeNode in="SourceGraphic"/>
 		</feMerge>
 	</filter>
