@@ -2611,19 +2611,19 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
-			<string>\sfillterRes\b(?=[^&lt;&gt;]*&gt;)</string>
-			<key>regularExpression</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>beginString</key>
-			<string>\sfillterUnits\b(?=[^&lt;&gt;]*&gt;)</string>
-			<key>regularExpression</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>beginString</key>
 			<string>\sfilter\b(?=[^&lt;&gt;]*&gt;)</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>\sfilterRes\b(?=[^&lt;&gt;]*&gt;)</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>\sfilterUnits\b(?=[^&lt;&gt;]*&gt;)</string>
 			<key>regularExpression</key>
 			<true/>
 		</dict>
