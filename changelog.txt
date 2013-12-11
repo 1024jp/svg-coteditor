@@ -1,3 +1,9 @@
+- 2013-12-11 v1.0
+    - 本スイート全体を Gapplin と併用して使うことを前提に改良（詳しくはREADMEを）
+    - 上記に伴い、従来のPreviewをlegacy previwerに移行し、Preview実行時には編集中のファイルをGapplinで開くように変更
+    - 上記に伴い、PDFでのExport機能を削除
+    - 各種ブラウザの現状を鑑みて、Open in Opera を Open in Chrome に変更
+
 - 2012-12-22 v0.6
     - [要wkpdf] PDF出力ができるようになった（ただし背景は透過されない）
 - 2012-08-17 v0.5.1α
