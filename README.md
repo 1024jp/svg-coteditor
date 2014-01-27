@@ -1,5 +1,5 @@
 
-SVG Suite v1.0.1 for CotEditor
+SVG Suite v1.1 for CotEditor
 ================================================
 
 SVG編集のためのCotEditor用のスクリプトセットです。
@@ -87,6 +87,9 @@ Command + Shift + R がショートカットキーとして割り振られてい
 
 ### Templates/
 それぞれ便利な定型句のテンプレートを挿入します。
+
+### Toggle Dark Mode
+Gapplinで最前面のウインドウのダークモードを切り替えます。
 
 
 カスタマイズ
