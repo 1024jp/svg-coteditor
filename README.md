@@ -1,5 +1,5 @@
 
-SVG Suite v1.0 for CotEditor
+SVG Suite v1.0.1 for CotEditor
 ================================================
 
 SVG編集のためのCotEditor用のスクリプトセットです。

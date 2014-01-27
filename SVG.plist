@@ -2691,7 +2691,7 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
-			<string>\sform\b(?=[^&lt;&gt;]*&gt;)</string>
+			<string>\sfrom\b(?=[^&lt;&gt;]*&gt;)</string>
 			<key>regularExpression</key>
 			<true/>
 		</dict>
