@@ -108,6 +108,13 @@ CotEditorスクリプトのショートカットキーはファイル名を変�
 
 いらないスクリプトを削除したりディレクトリを移動させる（例えばValidate on W3C を ScriptMenuの最上階層に）のも問題ないです。
 
+### Previewで設定可能な値
+- `syntaxName`
+	デフォルト値：SVG
+	
+	誤作動防止のためカラーリング・シンタックスがこの値のモードのときのみ実行されます。
+	"XML"等、他のシンタックス・モードでSVGを編集している場合は書き換えてください。
+
 ### New Document で設定可能な値
 - `insertTitleTag`,`insertStyleTag`,`insertDefsTag`
 

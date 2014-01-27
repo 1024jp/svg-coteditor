@@ -1,5 +1,6 @@
 - 2014-01-28 v1.1
     - Gapplinのダークモードを切り替えるスクリプト（Toggle Dark Mode）を追加
+    - Preview時にGpplinのウインドウがCotEditorのウインドウの横にくるように調整
     - シンタックス定義のtypoを修正
 
 - 2013-12-11 v1.0
