@@ -1,5 +1,5 @@
 
-SVG Suite v1.1 for CotEditor
+SVG Suite for CotEditor
 ================================================
 
 SVG編集のためのCotEditor用のスクリプトセットです。
@@ -114,6 +114,11 @@ CotEditorスクリプトのショートカットキーはファイル名を変�
 	
 	誤作動防止のためカラーリング・シンタックスがこの値のモードのときのみ実行されます。
 	"XML"等、他のシンタックス・モードでSVGを編集している場合は書き換えてください。
+
+- `adjustsWindowPosition`
+	デフォルト値：true (位置を調節する)
+	
+	Gapplinで開いたウインドウがCotEditorで開いているウインドウの隣に来るように調節をするかを決定します。
 
 ### New Document で設定可能な値
 - `insertTitleTag`,`insertStyleTag`,`insertDefsTag`
