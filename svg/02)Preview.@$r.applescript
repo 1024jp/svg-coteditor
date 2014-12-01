@@ -6,8 +6,8 @@
 [description]	
 	open current SVG document on CotEditor in Gapplin
 
-[version]	1.1.1
-[lastmod]	2014-03-06
+[version]	1.2
+[lastmod]	2014-12-01
 [author]	1024jp <http://wolfrosch.com/>
 [licence]	Creative Commons Attribution-NonCommercial 3.0 Unported License
 *)
@@ -27,7 +27,7 @@ property adjustsWindowPosition : true
 -- __advanced settings________________________________________________________
 
 -- extension of svg file
-property svgExtension : ".svg"
+property svgExtension : "svg"
 
 -- margin between CotEditor document and preview window
 property xPositionMargin : 15 -- px
@@ -36,23 +36,20 @@ property yPositionMargin : 80 -- px
 
 -- __main_______________________________________________________________
 
--- get file path from CotEditor
-tell application "CotEditor"
-	set thePath to ""
-	if exists front document then
-		set thePath to path of front document
-	else
-		return
-	end if
-end tell
-
 -- end script if coloring mode is not in SVG
 tell application "CotEditor"
 	if coloring style of front document is not syntaxName then return
 end tell
 
+-- get file path from CotEditor
+tell application "CotEditor"
+	if not (exists front document) then return
+	
+	set theFile to file of front document
+end tell
+
 -- end script if no file path is specified
-if thePath is "" then
+if theFile is missing value then
 	if showAlertDialog then
 		beep
 		display alert "No file path is specified." message "Please save the document first." & return & return & "script failed" as warning
@@ -62,7 +59,7 @@ if thePath is "" then
 end if
 
 -- end script if file doesn't have ".svg" extension
-if thePath does not end with svgExtension then
+if name extension of (info for theFile) is not svgExtension then
 	if showAlertDialog then
 		beep
 		display alert "The document would not be a SVG file." message "SVG file names should end in the extension \"" & svgExtension & "\"." & return & return & "script failed" as warning
@@ -74,7 +71,7 @@ end if
 
 -- open file in Gapplin
 tell application "Gapplin"
-	open POSIX file thePath as alias
+	open theFile
 	
 	-- adjust window position
 	if adjustsWindowPosition then
